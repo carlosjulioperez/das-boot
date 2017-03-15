@@ -1,0 +1,45 @@
+package ec.cjpq.boot;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.*;
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import static org.mockito.Mockito.*;
+
+import ec.cjpq.boot.controller.ShipwreckController;
+import ec.cjpq.boot.model.Shipwreck;
+import ec.cjpq.boot.repository.ShipwreckRepository;
+
+public class ShipwreckControllerTest{
+
+	@InjectMocks
+	private ShipwreckController sc;
+
+	@Mock
+	private ShipwreckRepository shipwreckRepository;
+
+	@Before
+	public void init(){
+		MockitoAnnotations.initMocks(this);
+	}
+
+	@Test
+	public void testShipwreckGet(){
+
+		Shipwreck sw = new Shipwreck();
+		sw.setId(1l);
+		when(shipwreckRepository.findOne(1l)).thenReturn(sw);
+
+		Shipwreck wreck = sc.get(1l);
+
+		verify(shipwreckRepository).findOne(1l);
+
+		//assertEquals(1l, wreck.getId().longValue() );
+		assertThat(wreck.getId(), is(1l) );
+	}
+}

@@ -1,0 +1,4 @@
+ec/cjpq/boot/AppTest.class
+ec/cjpq/boot/ShipwreckRepositoryIntegrationTest.class
+ec/cjpq/boot/ShipwreckControllerWebIntegrationTest.class
+ec/cjpq/boot/ShipwreckControllerTest.class

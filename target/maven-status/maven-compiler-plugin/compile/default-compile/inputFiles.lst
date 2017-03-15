@@ -1,0 +1,7 @@
+/home/carper/Documentos/proyectos/springBoot/das-boot/src/main/java/ec/cjpq/boot/App.java
+/home/carper/Documentos/proyectos/springBoot/das-boot/src/main/java/ec/cjpq/boot/repository/ShipwreckRepository.java
+/home/carper/Documentos/proyectos/springBoot/das-boot/src/main/java/ec/cjpq/boot/model/Shipwreck.java
+/home/carper/Documentos/proyectos/springBoot/das-boot/src/main/java/ec/cjpq/boot/controller/ShipwreckController.java
+/home/carper/Documentos/proyectos/springBoot/das-boot/src/main/java/ec/cjpq/boot/controller/ShipwreckStub.java
+/home/carper/Documentos/proyectos/springBoot/das-boot/src/main/java/ec/cjpq/boot/config/PersistenceConfiguration.java
+/home/carper/Documentos/proyectos/springBoot/das-boot/src/main/java/ec/cjpq/boot/controller/HomeController.java

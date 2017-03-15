@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ec.cjpq.boot.ShipwreckControllerWebIntegrationTest" time="2.772" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-7-oracle/jre/lib/amd64"/>
+    <property name="java.vm.version" value="24.80-b11"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/carper/das-boot"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="ES"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="test" value="ShipwreckControllerWebIntegrationTest"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/carper/Documentos/proyectos/springBoot/das-boot"/>
+    <property name="java.runtime.version" value="1.7.0_80-b15"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-7-oracle/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/home/carper/local/apache-maven-3.3.9/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.4.0-53-generic"/>
+    <property name="user.home" value="/home/carper"/>
+    <property name="user.timezone" value="America/Guayaquil"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="carper"/>
+    <property name="java.class.path" value="/home/carper/local/apache-maven-3.3.9/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-7-oracle/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dtest=ShipwreckControllerWebIntegrationTest"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="es"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_80"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-7-oracle/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-7-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-7-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-7-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-7-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-7-oracle/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/home/carper/local/apache-maven-3.3.9"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testListAll" classname="ec.cjpq.boot.ShipwreckControllerWebIntegrationTest" time="2.772">
+    <failure message="&#10;Expected: &quot;[]&quot;&#10;     but: was &quot;[{\&quot;id\&quot;:1,\&quot;name\&quot;:\&quot;Test update\&quot;,\&quot;description\&quot;:\&quot;A test shipwreck\&quot;,\&quot;condition\&quot;:\&quot;GOOD\&quot;,\&quot;depth\&quot;:85,\&quot;latitude\&quot;:44.5,\&quot;longitude\&quot;:120.5,\&quot;yearDiscovered\&quot;:2017}]&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: "[]"
+     but: was "[{\"id\":1,\"name\":\"Test update\",\"description\":\"A test shipwreck\",\"condition\":\"GOOD\",\"depth\":85,\"latitude\":44.5,\"longitude\":120.5,\"yearDiscovered\":2017}]"
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+	at ec.cjpq.boot.ShipwreckControllerWebIntegrationTest.testListAll(ShipwreckControllerWebIntegrationTest.java:37)
+</failure>
+    <system-out><![CDATA[21:17:50.393 [main] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class ec.cjpq.boot.ShipwreckControllerWebIntegrationTest]
+21:17:50.457 [main] DEBUG o.s.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+21:17:50.498 [main] DEBUG o.s.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+21:17:50.601 [main] DEBUG o.s.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [ec.cjpq.boot.ShipwreckControllerWebIntegrationTest] from class [org.springframework.boot.test.WebAppIntegrationTestContextBootstrapper]
+21:17:50.762 [main] DEBUG o.s.b.t.WebAppIntegrationTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@303f7944 declaringClass = 'ec.cjpq.boot.ShipwreckControllerWebIntegrationTest', classes = '{class ec.cjpq.boot.App}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
+21:17:50.790 [main] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [ec.cjpq.boot.ShipwreckControllerWebIntegrationTest]: class path resource [ec/cjpq/boot/ShipwreckControllerWebIntegrationTest-context.xml] does not exist
+21:17:50.791 [main] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [ec.cjpq.boot.ShipwreckControllerWebIntegrationTest]: class path resource [ec/cjpq/boot/ShipwreckControllerWebIntegrationTestContext.groovy] does not exist
+21:17:50.791 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [ec.cjpq.boot.ShipwreckControllerWebIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+21:17:50.799 [main] DEBUG o.s.t.c.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [ec.cjpq.boot.ShipwreckControllerWebIntegrationTest]
+21:17:50.817 [main] DEBUG o.s.test.util.ReflectionTestUtils - Setting field 'propertySourceProperties' of type [null] on target object [[WebMergedContextConfiguration@63709dc6 testClass = ShipwreckControllerWebIntegrationTest, locations = '{}', classes = '{class ec.cjpq.boot.App}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', resourceBasePath = '', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]] or target class [class org.springframework.test.context.web.WebMergedContextConfiguration] to value [[Ljava.lang.String;@7686652a]
+21:17:50.821 [main] DEBUG o.s.b.t.WebAppIntegrationTestContextBootstrapper - @TestExecutionListeners is not present for class [ec.cjpq.boot.ShipwreckControllerWebIntegrationTest]: using defaults.
+21:17:50.852 [main] INFO  o.s.b.t.WebAppIntegrationTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+21:17:51.015 [main] INFO  o.s.b.t.WebAppIntegrationTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@51bc1897, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@13f28b6d, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@189fab56, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1aa9a7bb, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7842f3a9, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@738b19ed]
+21:17:51.034 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [ec.cjpq.boot.ShipwreckControllerWebIntegrationTest]
+21:17:51.044 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [ec.cjpq.boot.ShipwreckControllerWebIntegrationTest]
+21:17:51.064 [main] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class ec.cjpq.boot.ShipwreckControllerWebIntegrationTest]
+21:17:51.065 [main] DEBUG o.s.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+21:17:51.066 [main] DEBUG o.s.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+21:17:51.076 [main] DEBUG o.s.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [ec.cjpq.boot.ShipwreckControllerWebIntegrationTest] from class [org.springframework.boot.test.WebAppIntegrationTestContextBootstrapper]
+21:17:51.085 [main] DEBUG o.s.b.t.WebAppIntegrationTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@335e6463 declaringClass = 'ec.cjpq.boot.ShipwreckControllerWebIntegrationTest', classes = '{class ec.cjpq.boot.App}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
+21:17:51.096 [main] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [ec.cjpq.boot.ShipwreckControllerWebIntegrationTest]: class path resource [ec/cjpq/boot/ShipwreckControllerWebIntegrationTest-context.xml] does not exist
+21:17:51.104 [main] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [ec.cjpq.boot.ShipwreckControllerWebIntegrationTest]: class path resource [ec/cjpq/boot/ShipwreckControllerWebIntegrationTestContext.groovy] does not exist
+21:17:51.105 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [ec.cjpq.boot.ShipwreckControllerWebIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+21:17:51.106 [main] DEBUG o.s.t.c.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [ec.cjpq.boot.ShipwreckControllerWebIntegrationTest]
+21:17:51.114 [main] DEBUG o.s.test.util.ReflectionTestUtils - Setting field 'propertySourceProperties' of type [null] on target object [[WebMergedContextConfiguration@7a10b9ed testClass = ShipwreckControllerWebIntegrationTest, locations = '{}', classes = '{class ec.cjpq.boot.App}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', resourceBasePath = '', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]] or target class [class org.springframework.test.context.web.WebMergedContextConfiguration] to value [[Ljava.lang.String;@601eb536]
+21:17:51.124 [main] DEBUG o.s.b.t.WebAppIntegrationTestContextBootstrapper - @TestExecutionListeners is not present for class [ec.cjpq.boot.ShipwreckControllerWebIntegrationTest]: using defaults.
+21:17:51.133 [main] INFO  o.s.b.t.WebAppIntegrationTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+21:17:51.144 [main] INFO  o.s.b.t.WebAppIntegrationTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@32db96ac, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6e811049, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5b54614c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@bff36c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3a0637d6, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6e3be05c]
+21:17:51.145 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [ec.cjpq.boot.ShipwreckControllerWebIntegrationTest]
+21:17:51.146 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [ec.cjpq.boot.ShipwreckControllerWebIntegrationTest]
+21:17:51.149 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [ec.cjpq.boot.ShipwreckControllerWebIntegrationTest]
+21:17:51.158 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [ec.cjpq.boot.ShipwreckControllerWebIntegrationTest]
+21:17:51.173 [main] DEBUG o.s.t.c.s.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@7c8b3bd8 testClass = ShipwreckControllerWebIntegrationTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7a10b9ed testClass = ShipwreckControllerWebIntegrationTest, locations = '{}', classes = '{class ec.cjpq.boot.App}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.IntegrationTest=true}', resourceBasePath = '', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+21:17:51.176 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [ec.cjpq.boot.ShipwreckControllerWebIntegrationTest]
+21:17:51.183 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [ec.cjpq.boot.ShipwreckControllerWebIntegrationTest]
+21:17:51.201 [main] DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@7c8b3bd8 testClass = ShipwreckControllerWebIntegrationTest, testInstance = ec.cjpq.boot.ShipwreckControllerWebIntegrationTest@36db6c61, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7a10b9ed testClass = ShipwreckControllerWebIntegrationTest, locations = '{}', classes = '{class ec.cjpq.boot.App}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.IntegrationTest=true}', resourceBasePath = '', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]]].
+21:17:51.525 [main] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+21:17:51.531 [main] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+21:17:51.531 [main] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+21:17:51.534 [main] DEBUG o.s.core.env.StandardEnvironment - Adding [integrationTest] PropertySource with search precedence immediately lower than [systemEnvironment]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.3.1.RELEASE)
+
+2017-03-14 21:17:52.793 DEBUG 21852 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2017-03-14 21:17:52.794 DEBUG 21852 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2017-03-14 21:17:52.805 DEBUG 21852 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2017-03-14 21:17:52.806 DEBUG 21852 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2017-03-14 21:17:52.809 DEBUG 21852 --- [           main] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2017-03-14 21:17:53.025  INFO 21852 --- [           main] .b.ShipwreckControllerWebIntegrationTest : Starting ShipwreckControllerWebIntegrationTest on cjbox with PID 21852 (/home/carper/Documentos/proyectos/springBoot/das-boot/target/test-classes started by carper in /home/carper/Documentos/proyectos/springBoot/das-boot)
+2017-03-14 21:17:53.026  INFO 21852 --- [           main] .b.ShipwreckControllerWebIntegrationTest : No active profile set, falling back to default profiles: default
+2017-03-14 21:17:53.248  INFO 21852 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2618293f: startup date [Tue Mar 14 21:17:53 ECT 2017]; root of context hierarchy
+2017-03-14 21:17:59.081  INFO 21852 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2017-03-14 21:18:02.451  INFO 21852 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7a3c3f70] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-14 21:18:04.329  INFO 21852 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-03-14 21:18:04.403  INFO 21852 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-03-14 21:18:04.410  INFO 21852 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.30
+2017-03-14 21:18:04.833  INFO 21852 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-03-14 21:18:04.833 DEBUG 21852 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2017-03-14 21:18:04.834  INFO 21852 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 11592 ms
+2017-03-14 21:18:06.379 DEBUG 21852 --- [ost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2017-03-14 21:18:06.388 DEBUG 21852 --- [ost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2017-03-14 21:18:06.391 DEBUG 21852 --- [ost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2017-03-14 21:18:06.392 DEBUG 21852 --- [ost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2017-03-14 21:18:06.393 DEBUG 21852 --- [ost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2017-03-14 21:18:06.477 DEBUG 21852 --- [ost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2017-03-14 21:18:06.479 DEBUG 21852 --- [ost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2017-03-14 21:18:06.480 DEBUG 21852 --- [ost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2017-03-14 21:18:06.482 DEBUG 21852 --- [ost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2017-03-14 21:18:06.483 DEBUG 21852 --- [ost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2017-03-14 21:18:06.604 DEBUG 21852 --- [ost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2017-03-14 21:18:06.604 DEBUG 21852 --- [ost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2017-03-14 21:18:06.605 DEBUG 21852 --- [ost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2017-03-14 21:18:06.605 DEBUG 21852 --- [ost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2017-03-14 21:18:06.606 DEBUG 21852 --- [ost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2017-03-14 21:18:06.742 DEBUG 21852 --- [ost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2017-03-14 21:18:06.742 DEBUG 21852 --- [ost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2017-03-14 21:18:06.743 DEBUG 21852 --- [ost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2017-03-14 21:18:06.743 DEBUG 21852 --- [ost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2017-03-14 21:18:06.744 DEBUG 21852 --- [ost-startStop-1] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2017-03-14 21:18:06.811  INFO 21852 --- [ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-14 21:18:06.834  INFO 21852 --- [ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'webServlet' to [/h2/*]
+2017-03-14 21:18:06.842  INFO 21852 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-14 21:18:06.843  INFO 21852 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-03-14 21:18:06.844  INFO 21852 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-03-14 21:18:06.844  INFO 21852 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'requestContextFilter' to: [/*]
+2017-03-14 21:18:08.628  INFO 21852 --- [           main] o.f.core.internal.util.VersionPrinter    : Flyway 3.2.1 by Boxfuse
+2017-03-14 21:18:10.009  INFO 21852 --- [           main] o.f.c.i.dbsupport.DbSupportFactory       : Database: jdbc:h2:file:~/dasboot (H2 1.4)
+2017-03-14 21:18:10.168  INFO 21852 --- [           main] o.f.core.internal.command.DbValidate     : Validated 1 migration (execution time 00:00.046s)
+2017-03-14 21:18:10.266  INFO 21852 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 2
+2017-03-14 21:18:10.267  INFO 21852 --- [           main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2017-03-14 21:18:10.547  INFO 21852 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-14 21:18:10.650  INFO 21852 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-14 21:18:11.034  INFO 21852 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.11.Final}
+2017-03-14 21:18:11.037  INFO 21852 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-03-14 21:18:11.041  INFO 21852 --- [           main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-03-14 21:18:11.725  INFO 21852 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-03-14 21:18:11.904  WARN 21852 --- [           main] o.a.tomcat.jdbc.pool.ConnectionPool      : Database connection pool evicter thread interval is set to lower than 1 second.
+2017-03-14 21:18:11.979  INFO 21852 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-03-14 21:18:12.752  INFO 21852 --- [           main] o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2017-03-14 21:18:12.761  WARN 21852 --- [           main] org.hibernate.cfg.SettingsFactory        : Unrecognized value for "hibernate.hbm2ddl.auto": false
+2017-03-14 21:18:15.180  INFO 21852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2618293f: startup date [Tue Mar 14 21:17:53 ECT 2017]; root of context hierarchy
+2017-03-14 21:18:15.670 DEBUG 21852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking for request mappings in application context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2618293f: startup date [Tue Mar 14 21:17:53 ECT 2017]; root of context hierarchy
+2017-03-14 21:18:15.789 DEBUG 21852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 request handler methods found on class ec.cjpq.boot.controller.ShipwreckController: {public ec.cjpq.boot.model.Shipwreck ec.cjpq.boot.controller.ShipwreckController.get(java.lang.Long)={[/api/v1/shipwrecks/{id}],methods=[GET]}, public ec.cjpq.boot.model.Shipwreck ec.cjpq.boot.controller.ShipwreckController.create(ec.cjpq.boot.model.Shipwreck)={[/api/v1/shipwrecks],methods=[POST]}, public java.util.List ec.cjpq.boot.controller.ShipwreckController.list()={[/api/v1/shipwrecks],methods=[GET]}, public ec.cjpq.boot.model.Shipwreck ec.cjpq.boot.controller.ShipwreckController.delete(java.lang.Long)={[/api/v1/shipwrecks/{id}],methods=[DELETE]}, public ec.cjpq.boot.model.Shipwreck ec.cjpq.boot.controller.ShipwreckController.update(java.lang.Long,ec.cjpq.boot.model.Shipwreck)={[/api/v1/shipwrecks/{id}],methods=[PUT]}}
+2017-03-14 21:18:15.796  INFO 21852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/shipwrecks/{id}],methods=[GET]}" onto public ec.cjpq.boot.model.Shipwreck ec.cjpq.boot.controller.ShipwreckController.get(java.lang.Long)
+2017-03-14 21:18:15.804  INFO 21852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/shipwrecks],methods=[POST]}" onto public ec.cjpq.boot.model.Shipwreck ec.cjpq.boot.controller.ShipwreckController.create(ec.cjpq.boot.model.Shipwreck)
+2017-03-14 21:18:15.810  INFO 21852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/shipwrecks],methods=[GET]}" onto public java.util.List<ec.cjpq.boot.model.Shipwreck> ec.cjpq.boot.controller.ShipwreckController.list()
+2017-03-14 21:18:15.812  INFO 21852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/shipwrecks/{id}],methods=[DELETE]}" onto public ec.cjpq.boot.model.Shipwreck ec.cjpq.boot.controller.ShipwreckController.delete(java.lang.Long)
+2017-03-14 21:18:15.815  INFO 21852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/shipwrecks/{id}],methods=[PUT]}" onto public ec.cjpq.boot.model.Shipwreck ec.cjpq.boot.controller.ShipwreckController.update(java.lang.Long,ec.cjpq.boot.model.Shipwreck)
+2017-03-14 21:18:15.820 DEBUG 21852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 1 request handler methods found on class ec.cjpq.boot.controller.HomeController: {public java.lang.String ec.cjpq.boot.controller.HomeController.home()={[/]}}
+2017-03-14 21:18:15.825  INFO 21852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String ec.cjpq.boot.controller.HomeController.home()
+2017-03-14 21:18:15.859 DEBUG 21852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 request handler methods found on class org.springframework.boot.autoconfigure.web.BasicErrorController: {public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)={[/error],produces=[text/html]}, public org.springframework.http.ResponseEntity org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)={[/error]}}
+2017-03-14 21:18:15.860  INFO 21852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-14 21:18:15.863  INFO 21852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-14 21:18:15.979  INFO 21852 --- [           main] o.s.w.s.c.a.WebMvcConfigurerAdapter      : Adding welcome page: class path resource [public/index.html]
+2017-03-14 21:18:16.098  INFO 21852 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2017-03-14 21:18:16.176 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Looking for URL mappings in application context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2618293f: startup date [Tue Mar 14 21:17:53 ECT 2017]; root of context hierarchy
+2017-03-14 21:18:16.178 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+2017-03-14 21:18:16.180 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+2017-03-14 21:18:16.181 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+2017-03-14 21:18:16.182 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+2017-03-14 21:18:16.184 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor': no URL paths identified
+2017-03-14 21:18:16.185 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.event.internalEventListenerProcessor': no URL paths identified
+2017-03-14 21:18:16.187 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.event.internalEventListenerFactory': no URL paths identified
+2017-03-14 21:18:16.190 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'app': no URL paths identified
+2017-03-14 21:18:16.191 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor': no URL paths identified
+2017-03-14 21:18:16.193 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor': no URL paths identified
+2017-03-14 21:18:16.194 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'shipwreckController': no URL paths identified
+2017-03-14 21:18:16.195 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'homeController': no URL paths identified
+2017-03-14 21:18:16.197 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'persistenceConfiguration': no URL paths identified
+2017-03-14 21:18:16.197 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dataSource': no URL paths identified
+2017-03-14 21:18:16.198 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'flywayDataSource': no URL paths identified
+2017-03-14 21:18:16.200 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.AutoConfigurationPackages': no URL paths identified
+2017-03-14 21:18:16.201 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.PropertyPlaceholderAutoConfiguration': no URL paths identified
+2017-03-14 21:18:16.202 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.condition.BeanTypeRegistry': no URL paths identified
+2017-03-14 21:18:16.203 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'propertySourcesPlaceholderConfigurer': no URL paths identified
+2017-03-14 21:18:16.205 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration$TomcatWebSocketConfiguration': no URL paths identified
+2017-03-14 21:18:16.205 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'websocketContainerCustomizer': no URL paths identified
+2017-03-14 21:18:16.206 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.websocket.WebSocketAutoConfiguration': no URL paths identified
+2017-03-14 21:18:16.208 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat': no URL paths identified
+2017-03-14 21:18:16.209 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'tomcatEmbeddedServletContainerFactory': no URL paths identified
+2017-03-14 21:18:16.210 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration': no URL paths identified
+2017-03-14 21:18:16.212 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'embeddedServletContainerCustomizerBeanPostProcessor': no URL paths identified
+2017-03-14 21:18:16.213 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration$DispatcherServletConfiguration': no URL paths identified
+2017-03-14 21:18:16.214 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dispatcherServlet': no URL paths identified
+2017-03-14 21:18:16.215 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dispatcherServletRegistration': no URL paths identified
+2017-03-14 21:18:16.216 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.mvc.CONFIGURATION_PROPERTIES': no URL paths identified
+2017-03-14 21:18:16.218 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor': no URL paths identified
+2017-03-14 21:18:16.220 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.store': no URL paths identified
+2017-03-14 21:18:16.221 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.DispatcherServletAutoConfiguration': no URL paths identified
+2017-03-14 21:18:16.221 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration': no URL paths identified
+2017-03-14 21:18:16.223 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'error': no URL paths identified
+2017-03-14 21:18:16.224 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'beanNameViewResolver': no URL paths identified
+2017-03-14 21:18:16.225 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration': no URL paths identified
+2017-03-14 21:18:16.227 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'errorAttributes': no URL paths identified
+2017-03-14 21:18:16.227 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'basicErrorController': no URL paths identified
+2017-03-14 21:18:16.228 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'errorPageCustomizer': no URL paths identified
+2017-03-14 21:18:16.230 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'preserveErrorControllerTargetClassPostProcessor': no URL paths identified
+2017-03-14 21:18:16.231 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$EnableWebMvcConfiguration': no URL paths identified
+2017-03-14 21:18:16.232 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'requestMappingHandlerAdapter': no URL paths identified
+2017-03-14 21:18:16.233 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'requestMappingHandlerMapping': no URL paths identified
+2017-03-14 21:18:16.234 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcContentNegotiationManager': no URL paths identified
+2017-03-14 21:18:16.235 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'viewControllerHandlerMapping': no URL paths identified
+2017-03-14 21:18:16.237 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'beanNameHandlerMapping': no URL paths identified
+2017-03-14 21:18:16.238 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'resourceHandlerMapping': no URL paths identified
+2017-03-14 21:18:16.240 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcResourceUrlProvider': no URL paths identified
+2017-03-14 21:18:16.241 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'defaultServletHandlerMapping': no URL paths identified
+2017-03-14 21:18:16.241 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcConversionService': no URL paths identified
+2017-03-14 21:18:16.243 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcValidator': no URL paths identified
+2017-03-14 21:18:16.244 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcPathMatcher': no URL paths identified
+2017-03-14 21:18:16.245 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcUrlPathHelper': no URL paths identified
+2017-03-14 21:18:16.247 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcUriComponentsContributor': no URL paths identified
+2017-03-14 21:18:16.247 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'httpRequestHandlerAdapter': no URL paths identified
+2017-03-14 21:18:16.248 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'simpleControllerHandlerAdapter': no URL paths identified
+2017-03-14 21:18:16.250 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'handlerExceptionResolver': no URL paths identified
+2017-03-14 21:18:16.251 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mvcViewResolver': no URL paths identified
+2017-03-14 21:18:16.252 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter$FaviconConfiguration': no URL paths identified
+2017-03-14 21:18:16.253 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'faviconHandlerMapping': no URL paths identified
+2017-03-14 21:18:16.260 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'faviconRequestHandler': no URL paths identified
+2017-03-14 21:18:16.266 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter': no URL paths identified
+2017-03-14 21:18:16.267 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'defaultViewResolver': no URL paths identified
+2017-03-14 21:18:16.267 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'requestContextFilter': no URL paths identified
+2017-03-14 21:18:16.268 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'viewResolver': no URL paths identified
+2017-03-14 21:18:16.269 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.resources.CONFIGURATION_PROPERTIES': no URL paths identified
+2017-03-14 21:18:16.279 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration': no URL paths identified
+2017-03-14 21:18:16.280 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'hiddenHttpMethodFilter': no URL paths identified
+2017-03-14 21:18:16.281 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'httpPutFormContentFilter': no URL paths identified
+2017-03-14 21:18:16.282 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$JdkDynamicAutoProxyConfiguration': no URL paths identified
+2017-03-14 21:18:16.283 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.aop.config.internalAutoProxyCreator': no URL paths identified
+2017-03-14 21:18:16.283 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.aop.AopAutoConfiguration': no URL paths identified
+2017-03-14 21:18:16.284 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.transaction.jta.JtaAutoConfiguration': no URL paths identified
+2017-03-14 21:18:16.284 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.jta.CONFIGURATION_PROPERTIES': no URL paths identified
+2017-03-14 21:18:16.285 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$JdbcTemplateConfiguration': no URL paths identified
+2017-03-14 21:18:16.285 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jdbcTemplate': no URL paths identified
+2017-03-14 21:18:16.286 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'namedParameterJdbcTemplate': no URL paths identified
+2017-03-14 21:18:16.286 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$DataSourceInitializerConfiguration': no URL paths identified
+2017-03-14 21:18:16.287 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dataSourceInitializer': no URL paths identified
+2017-03-14 21:18:16.288 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$TomcatDataSourcePoolMetadataProviderConfiguration': no URL paths identified
+2017-03-14 21:18:16.288 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'tomcatPoolDataSourceMetadataProvider': no URL paths identified
+2017-03-14 21:18:16.289 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration': no URL paths identified
+2017-03-14 21:18:16.289 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration': no URL paths identified
+2017-03-14 21:18:16.290 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.datasource.CONFIGURATION_PROPERTIES': no URL paths identified
+2017-03-14 21:18:16.290 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dataSourceInitializerPostProcessor': no URL paths identified
+2017-03-14 21:18:16.291 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration': no URL paths identified
+2017-03-14 21:18:16.292 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'openEntityManagerInViewInterceptor': no URL paths identified
+2017-03-14 21:18:16.292 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration': no URL paths identified
+2017-03-14 21:18:16.303 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration': no URL paths identified
+2017-03-14 21:18:16.303 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'transactionManager': no URL paths identified
+2017-03-14 21:18:16.304 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jpaVendorAdapter': no URL paths identified
+2017-03-14 21:18:16.304 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'entityManagerFactoryBuilder': no URL paths identified
+2017-03-14 21:18:16.305 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'entityManagerFactory': no URL paths identified
+2017-03-14 21:18:16.305 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.jpa.CONFIGURATION_PROPERTIES': no URL paths identified
+2017-03-14 21:18:16.306 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'dataSourceInitializedPublisher': no URL paths identified
+2017-03-14 21:18:16.307 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration': no URL paths identified
+2017-03-14 21:18:16.310 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration': no URL paths identified
+2017-03-14 21:18:16.311 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'persistenceExceptionTranslationPostProcessor': no URL paths identified
+2017-03-14 21:18:16.312 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration': no URL paths identified
+2017-03-14 21:18:16.312 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.data.repository.core.support.RepositoryInterfaceAwareBeanPostProcessor': no URL paths identified
+2017-03-14 21:18:16.313 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'emBeanDefinitionRegistrarPostProcessor': no URL paths identified
+2017-03-14 21:18:16.314 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jpaMappingContext': no URL paths identified
+2017-03-14 21:18:16.314 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jpaContext': no URL paths identified
+2017-03-14 21:18:16.315 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'shipwreckRepository': no URL paths identified
+2017-03-14 21:18:16.316 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration': no URL paths identified
+2017-03-14 21:18:16.317 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jacksonObjectMapperBuilder': no URL paths identified
+2017-03-14 21:18:16.318 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.jackson.CONFIGURATION_PROPERTIES': no URL paths identified
+2017-03-14 21:18:16.320 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration': no URL paths identified
+2017-03-14 21:18:16.321 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jacksonObjectMapper': no URL paths identified
+2017-03-14 21:18:16.322 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration': no URL paths identified
+2017-03-14 21:18:16.328 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration': no URL paths identified
+2017-03-14 21:18:16.328 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'stringHttpMessageConverter': no URL paths identified
+2017-03-14 21:18:16.329 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.http.encoding.CONFIGURATION_PROPERTIES': no URL paths identified
+2017-03-14 21:18:16.329 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration': no URL paths identified
+2017-03-14 21:18:16.330 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'mappingJackson2HttpMessageConverter': no URL paths identified
+2017-03-14 21:18:16.331 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.JacksonHttpMessageConvertersConfiguration': no URL paths identified
+2017-03-14 21:18:16.331 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpMessageConvertersAutoConfiguration': no URL paths identified
+2017-03-14 21:18:16.332 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'messageConverters': no URL paths identified
+2017-03-14 21:18:16.333 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.data.web.config.SpringDataWebConfiguration': no URL paths identified
+2017-03-14 21:18:16.335 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'pageableResolver': no URL paths identified
+2017-03-14 21:18:16.335 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'sortResolver': no URL paths identified
+2017-03-14 21:18:16.336 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.data.web.config.SpringDataJacksonConfiguration': no URL paths identified
+2017-03-14 21:18:16.336 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'jacksonGeoModule': no URL paths identified
+2017-03-14 21:18:16.339 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration': no URL paths identified
+2017-03-14 21:18:16.339 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration$FlywayJpaDependencyConfiguration': no URL paths identified
+2017-03-14 21:18:16.340 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration$FlywayConfiguration$FlywayInitializerJpaDependencyConfiguration': no URL paths identified
+2017-03-14 21:18:16.340 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration$FlywayConfiguration': no URL paths identified
+2017-03-14 21:18:16.341 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'flyway': no URL paths identified
+2017-03-14 21:18:16.351 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'flywayInitializer': no URL paths identified
+2017-03-14 21:18:16.351 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'flyway.CONFIGURATION_PROPERTIES': no URL paths identified
+2017-03-14 21:18:16.352 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration': no URL paths identified
+2017-03-14 21:18:16.353 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'stringToMigrationVersionConverter': no URL paths identified
+2017-03-14 21:18:16.353 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration': no URL paths identified
+2017-03-14 21:18:16.354 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'h2Console': no URL paths identified
+2017-03-14 21:18:16.354 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'spring.h2.console.CONFIGURATION_PROPERTIES': no URL paths identified
+2017-03-14 21:18:16.355 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': no URL paths identified
+2017-03-14 21:18:16.356 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.transaction.config.internalTransactionAdvisor': no URL paths identified
+2017-03-14 21:18:16.356 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'transactionAttributeSource': no URL paths identified
+2017-03-14 21:18:16.357 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'transactionInterceptor': no URL paths identified
+2017-03-14 21:18:16.358 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.transaction.config.internalTransactionalEventListenerFactory': no URL paths identified
+2017-03-14 21:18:16.358 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$TransactionManagementConfiguration': no URL paths identified
+2017-03-14 21:18:16.359 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration': no URL paths identified
+2017-03-14 21:18:16.360 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration': no URL paths identified
+2017-03-14 21:18:16.360 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'transactionTemplate': no URL paths identified
+2017-03-14 21:18:16.361 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.HttpEncodingAutoConfiguration': no URL paths identified
+2017-03-14 21:18:16.361 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'characterEncodingFilter': no URL paths identified
+2017-03-14 21:18:16.362 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.MultipartAutoConfiguration': no URL paths identified
+2017-03-14 21:18:16.363 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'multipartConfigElement': no URL paths identified
+2017-03-14 21:18:16.363 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'multipartResolver': no URL paths identified
+2017-03-14 21:18:16.364 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'multipart.CONFIGURATION_PROPERTIES': no URL paths identified
+2017-03-14 21:18:16.365 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.boot.autoconfigure.web.ServerPropertiesAutoConfiguration': no URL paths identified
+2017-03-14 21:18:16.365 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'serverProperties': no URL paths identified
+2017-03-14 21:18:16.375 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'duplicateServerPropertiesDetector': no URL paths identified
+2017-03-14 21:18:16.375 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.orm.jpa.SharedEntityManagerCreator#0': no URL paths identified
+2017-03-14 21:18:16.376 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'autoConfigurationReport': no URL paths identified
+2017-03-14 21:18:16.377 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'applicationEventMulticaster': no URL paths identified
+2017-03-14 21:18:16.377 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'springApplicationArguments': no URL paths identified
+2017-03-14 21:18:16.378 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'springBootLoggingSystem': no URL paths identified
+2017-03-14 21:18:16.378 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'environment': no URL paths identified
+2017-03-14 21:18:16.379 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'systemProperties': no URL paths identified
+2017-03-14 21:18:16.380 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'systemEnvironment': no URL paths identified
+2017-03-14 21:18:16.380 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified
+2017-03-14 21:18:16.381 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'messageSource': no URL paths identified
+2017-03-14 21:18:16.382 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'servletContext': no URL paths identified
+2017-03-14 21:18:16.382 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'contextParameters': no URL paths identified
+2017-03-14 21:18:16.383 DEBUG 21852 --- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Rejected bean name 'contextAttributes': no URL paths identified
+2017-03-14 21:18:16.425  INFO 21852 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-14 21:18:16.435  INFO 21852 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-14 21:18:16.604 DEBUG 21852 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Looking for exception mappings: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2618293f: startup date [Tue Mar 14 21:17:53 ECT 2017]; root of context hierarchy
+2017-03-14 21:18:16.858  INFO 21852 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-14 21:18:18.789 DEBUG 21852 --- [           main] o.s.w.s.resource.ResourceUrlProvider     : Looking for resource handler mappings
+2017-03-14 21:18:18.791 DEBUG 21852 --- [           main] o.s.w.s.resource.ResourceUrlProvider     : Found resource handler mapping: URL pattern="/**/favicon.ico", locations=[class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], class path resource []], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@2804e04b]
+2017-03-14 21:18:18.792 DEBUG 21852 --- [           main] o.s.w.s.resource.ResourceUrlProvider     : Found resource handler mapping: URL pattern="/webjars/**", locations=[class path resource [META-INF/resources/webjars/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@58217073]
+2017-03-14 21:18:18.793 DEBUG 21852 --- [           main] o.s.w.s.resource.ResourceUrlProvider     : Found resource handler mapping: URL pattern="/**", locations=[ServletContext resource [/], class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@7b5dbb38]
+2017-03-14 21:18:19.314  INFO 21852 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-03-14 21:18:19.390  INFO 21852 --- [           main] .b.ShipwreckControllerWebIntegrationTest : Started ShipwreckControllerWebIntegrationTest in 27.837 seconds (JVM running for 30.084)
+2017-03-14 21:18:20.096 DEBUG 21852 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing servlet 'dispatcherServlet'
+2017-03-14 21:18:20.098  INFO 21852 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-03-14 21:18:20.098  INFO 21852 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-03-14 21:18:20.098 DEBUG 21852 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Using MultipartResolver [org.springframework.web.multipart.support.StandardServletMultipartResolver@19e0a697]
+2017-03-14 21:18:20.117 DEBUG 21852 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@6b37a7dc]
+2017-03-14 21:18:20.136 DEBUG 21852 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@58645c47]
+2017-03-14 21:18:20.157 DEBUG 21852 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3c5617e6]
+2017-03-14 21:18:20.186 DEBUG 21852 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Unable to locate FlashMapManager with name 'flashMapManager': using default [org.springframework.web.servlet.support.SessionFlashMapManager@106a0b4d]
+2017-03-14 21:18:20.199 DEBUG 21852 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Published WebApplicationContext of servlet 'dispatcherServlet' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.dispatcherServlet]
+2017-03-14 21:18:20.200  INFO 21852 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 102 ms
+2017-03-14 21:18:20.203 DEBUG 21852 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Servlet 'dispatcherServlet' configured successfully
+2017-03-14 21:18:20.326 DEBUG 21852 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : DispatcherServlet with name 'dispatcherServlet' processing GET request for [/api/v1/shipwrecks]
+2017-03-14 21:18:20.360 DEBUG 21852 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Looking up handler method for path /api/v1/shipwrecks
+2017-03-14 21:18:20.371 DEBUG 21852 --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Returning handler method [public java.util.List<ec.cjpq.boot.model.Shipwreck> ec.cjpq.boot.controller.ShipwreckController.list()]
+2017-03-14 21:18:20.375 DEBUG 21852 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Last-Modified value for [/api/v1/shipwrecks] is: -1
+2017-03-14 21:18:22.068 DEBUG 21852 --- [nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Written [[ec.cjpq.boot.model.Shipwreck@51abcd30]] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@56df7ace]
+2017-03-14 21:18:22.071 DEBUG 21852 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Null ModelAndView returned to DispatcherServlet with name 'dispatcherServlet': assuming HandlerAdapter completed request handling
+2017-03-14 21:18:22.074 DEBUG 21852 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Successfully completed request
+]]></system-out>
+  </testcase>
+</testsuite>

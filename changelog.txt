@@ -1,0 +1,39 @@
+das-boot
+	+ run:
+		uzbl-tabbed http://localhost:8080/index.html &
+		uzbl-tabbed http://localhost:8080/h2 &
+
+
+		http://201.183.224.10:8080/
+		ssh cromero@186.101.10.150
+		ssh cromero@192.168.10.13
+
+	+ github:
+
+		echo "# das-boot" >> README.md
+		git init
+		git add README.md
+		git commit -m "first commit"
+		git remote add origin https://github.com/carlosjulioperez/das-boot.git
+		git push -u origin master
+
+	+ maven:
+		mvn spring-boot:run
+
+		mvn test
+		mvn test -Dtest=AppTest
+		mvn -Dtest=TestCircle#xyz test
+
+		mvn test -Dtest=ShipwreckControllerTest
+		mvn test -Dtest=ShipwreckRepositoryIntegrationTest
+		mvn test -Dtest=ShipwreckControllerWebIntegrationTest
+
+		http://localhost:8080/
+	
+	* spring-boot examples:
+		https://github.com/spring-projects/spring-boot/tree/master/spring-boot-samples
+
+		git clone https://github.com/dlbunker/ps-spring-boot-resources.git
+
+	* properties:
+		https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
