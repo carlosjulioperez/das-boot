@@ -1,7 +1,0 @@
-ec/cjpq/boot/controller/ShipwreckStub.class
-ec/cjpq/boot/model/Shipwreck.class
-ec/cjpq/boot/config/PersistenceConfiguration.class
-ec/cjpq/boot/controller/ShipwreckController.class
-ec/cjpq/boot/App.class
-ec/cjpq/boot/repository/ShipwreckRepository.class
-ec/cjpq/boot/controller/HomeController.class
